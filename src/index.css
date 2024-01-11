@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+.app {
+  background-image: url('https://cdn.pixabay.com/photo/2017/03/25/17/55/colorful-2174045_1280.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+
+
+.todo-app {
+  background: linear-gradient(to bottom, #77fd77, #aaffcf);
+  max-height: 90vh; 
+  overflow-y: auto; 
+  width: 800px;
+  display: flex;
+  border: 1px solid #000000;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.dashboard {
+  background: linear-gradient(to right, #58b6f5, #b3d8fd); 
+  height: 180px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #ffffff; 
+}
+
+
+
+.form-add-todo,
+
+.todo-edit-form {
+  background-color: #fcfcfc; 
+  margin-inline: 3%;
+  padding: 10px; 
+  display: flex;
+  gap: 8px;
+  border-radius: 4px;
+}
+
+.form-add-todo > input {
+  flex-grow: 1;
+  font-size: 14px;
+  padding: 12px; 
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+
+.form-add-todo > input:focus {
+  outline: none; 
+  border-color: #3498db; 
+}
+.todo-edit-form > [type=text] {
+  flex-grow: 1;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}
+
+.form-add-todo > button {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  background-color: #2cff24;
+  color: #000000;
+  border: none;
+  border: 1px solid #000000;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.form-add-todo > button:hover {
+  transform: scale(1.1);
+  background-color: #00eeff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* เเบ็คกราวฟรอมข้างหลังเวลากด Edit */
+.todo-edit-form {
+  background-color: #ffffff; 
+  border: 1px solid #000000;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; 
+  border-radius: 4px;
+  margin-top: 15px; 
+}
+
+/* ตัวหนังสือ ในform ด้านหลัง */
+.todo-edit-form > [type='text'] {
+  flex-grow: 1;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.todo-edit-form > button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: hsla(0, 0%, 100%, 0.76);
+  color: #040404;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block; 
+}
+
+.todo-edit-form > [type="submit"] {
+  background-color: hsla(120, 100%, 51%, 0.76); 
+}
+
+
+  
+
+.todo-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+  /* เบล็คกราว ของเเต่ละ คอลัม */
+.todo-item {
+  background-color: #ffffff; 
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #000000; 
+  transition: background-color 0.1s ease, transform 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #ff9900;
+  transform: scale(0.9);
+}
+
+
+.todo-item p {
+  flex-grow: 1;
+  margin-right: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ระยะห่างของปุ่ม Edit เเละปุ่ม Delete*/
+.todo-item .btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-item .btn-group a {
+  padding: 8px 12px;
+  background-color: #00b7ff; 
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.todo-item .btn-group a:hover {
+  background-color: #ff0000;
+  transform: scale(1.1);
+}
+
+
+
+
+/* ปุ่มเซฟ ด้านใน */
+.todo-edit-form > [type="submit"] {
+  background-color: hsl(120, 100%, 50%); 
+}
+
+
+.job-done {
+  text-decoration: line-through;
+  color: #95a5a6; 
+}

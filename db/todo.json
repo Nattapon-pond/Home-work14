@@ -1,0 +1,55 @@
+{
+  "todos": [
+    {
+      "todo": "Contribute code or a monetary donation to an open-source software project",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "todo": "Solve a Rubik's cube",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "todo": "Learn vite js",
+      "id": 9
+    },
+    {
+      "todo": "Learn Data structure",
+      "completed": false,
+      "id": 14
+    },
+    {
+      "todo": "Java",
+      "completed": false,
+      "user": 1,
+      "id": 16
+    },
+    {
+      "todo": "NattaPond",
+      "completed": false,
+      "user": 1,
+      "id": 17
+    },
+    {
+      "todo": "Css",
+      "completed": false,
+      "user": 1,
+      "id": 18
+    },
+    {
+      "todo": "React",
+      "completed": false,
+      "user": 1,
+      "id": 19
+    }
+  ],
+  "users": [
+    {
+      "name": "andy"
+    },
+    {
+      "name": "bobby"
+    }
+  ]
+}
